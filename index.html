@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi dan dekripsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enkripsi dan Dekripsi</h1>
+        <div>
+            <label for="key">Kunci:</label>
+            <input type="text" id="key" autocomplete="off" placeholder="Masukan Kunci Anda...">
+        </div>
+        <div>
+            <label for="message">Pesan:</label>
+            <textarea id="message" autocomplete="off" placeholder="Masukan Pesan Anda..."></textarea>
+        </div>
+        <div class="btn-group">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+            <button class="btn-clear" onclick="clearFields()">Clear</button>
+        </div>
+        <div>
+            <label for="output">Result:</label>
+            <textarea id="output" readonly autocomplete="off" placeholder="Hasil"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
